@@ -1,0 +1,98 @@
+* {
+	margin	:	0;
+	padding	:	0;
+	font-family: helvetica;
+  background: #2f2f2b;
+}
+
+body{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.header {
+	padding-top: 20px;
+	margin-bottom: 20px;
+	height: 50px;
+}
+
+.header::after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.title{
+  float: left;
+  font-size: 40px;
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+
+.nav{
+  float:right;
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li{
+	float: left;
+}
+
+.home{
+	position: absolute;
+	top: 47px;
+	right: 300px;
+  width: 20px;
+  height: 15px;
+  background-color: white;
+  border-width: 0;
+  border-style: solid;
+}
+
+.home::before{
+  content: '';
+  position: absolute;
+  border-right: 20px solid #fff;
+  border-bottom: 20px solid transparent;
+  transform: translateY(-13px) rotate(315deg);
+}
+
+#work{
+	top: 31px;
+	right: 210px;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+#work .handle{
+  width: 10px;
+  height: 4px;
+  background-color: transparent;
+  border: 1px solid white;
+  transform: translate(9px,1px);
+}
+
+#work .box{
+  width: 30px;
+  height: 25px;
+  background-color: white;
+}
+
+#work .box .circle{
+  width: 4px;
+  height: 8px;
+  border-radius:50%;
+  background-color: #2f2f2b;
+  transform: translate(13px,6px);
+}
+
+#work .box .line{
+  border-bottom: 2px solid #2f2f2b;
+  transform: translateY(1px);
+}
